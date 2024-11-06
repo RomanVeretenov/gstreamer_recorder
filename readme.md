@@ -24,7 +24,7 @@ ps -aux | grep -v grep | grep "gst-launch-1.0"
 ```
 - When all files are moved to rclone remote, finish the rec_move_rclone.sh process
 ```
-ps -aux | grep -v grep | grep "move_to_cloud.sh" | awk '{print $2}' | xargs sudo kill -9
+ps -aux | grep -v grep | grep "rec_move_rclone.sh" | awk '{print $2}' | xargs sudo kill -9
 ```
 
 
