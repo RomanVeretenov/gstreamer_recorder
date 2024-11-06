@@ -14,7 +14,7 @@ gstreamer-based rtsp stream recorder and uploader
 - - this will start recording from rtsp://url1 to camera1_00.mp4, from rtsp://url2 to camera2_00.mp4 and so on. The files will be approx 10 min long
 - start rec_move_rclone.sh
 ```
-./rec_move_rclone.sh "camera*.mp4" some_rclone_remote:
+./rec_move_rclone.sh "camera*.mp4" some_rclone_remote: &
 ```
 - - this will continuously move the recorded videos to your some_rclone_remote:
 - - when done, call `./rec_stop.sh`.
