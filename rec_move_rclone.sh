@@ -23,5 +23,5 @@ do
         # echo rclone -P move $filename $remote
         ffprobe -hide_banner $filename && rclone -P move $filename $remote
     done
-    sleep 1
+    sleep 60
 done
